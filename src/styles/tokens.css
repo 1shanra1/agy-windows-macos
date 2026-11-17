@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Halcyon OS ("Aqua-Luna") Design System v2 Tokens
+   ========================================================================== */
+
+:root {
+  /* Typography (§2) */
+  --font-ui: 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, 'Segoe UI', sans-serif;
+  --font-title: 'Trebuchet MS', 'Lucida Grande', Tahoma, sans-serif;
+  --font-start: 'Trebuchet MS', 'Franklin Gothic Medium', sans-serif;
+  --font-wordmark: 'EB Garamond', 'Apple Garamond', Garamond, Georgia, serif;
+  --font-clock: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+  --font-mono: 'SF Mono', Monaco, Menlo, Consolas, monospace;
+  --font-doc-serif: Georgia, 'Times New Roman', serif;
+
+  /* Compatibility aliases for legacy imports during Wave 2 transition */
+  --font-sans: var(--font-ui);
+  --font-serif: var(--font-doc-serif);
+  --font-xp: var(--font-title);
+
+  /* Layout Constants (§3, §12) */
+  --menubar-height: 25px;
+  --shelf-clearance: 72px;
+
+  /* Core Aqua-Luna Palette (§4.1) */
+  --luna-900: #0B3A9E;
+  --luna-700: #1556C8;
+  --luna-500: #2A75E8;
+  --luna-300: #6AAAF7;
+  --luna-field: #5A7FDB;
+
+  --select: #3875D7;
+  --select-inactive: #D0D5DD;
+  --focus-ring: 0 0 0 3px rgba(56, 117, 215, 0.45);
+
+  --linen: #EEECE4;
+  --linen-hi: #F8F7F3;
+  --linen-lo: #E3E0D6;
+
+  --etch-dark: rgba(0, 0, 0, 0.16);
+  --etch-light: rgba(255, 255, 255, 0.75);
+
+  --paper: #FFFFFF;
+  --desk: #9EA4AC;
+
+  --text: #1D1D1F;
+  --text-2: #4A4A4A;
+  --text-3: #8A8A8A;
+  --text-primary: var(--text);
+  --text-secondary: var(--text-2);
+  --text-muted: var(--text-3);
+
+  --meadow-500: #3C9A35;
+  --meadow-300: #7BD15E;
+  --meadow-700: #24721F;
+
+  --taskpane-bg: linear-gradient(180deg, #7BA2E7 0%, #6375D6 100%);
+  --taskpane-card: #D6DFF7;
+  --taskpane-head: linear-gradient(90deg, #FFFFFF 0%, #C6D3F7 100%);
+
+  --balloon: #FFFFE1;
+
+  /* Elevation & Wells (§4.2) */
+  --shadow-window:
+    0 0 0 1px rgba(0, 0, 0, 0.28),
+    0 18px 48px rgba(0, 0, 0, 0.30),
+    0 3px 10px rgba(0, 0, 0, 0.16);
+  --shadow-window-i:
+    0 0 0 1px rgba(0, 0, 0, 0.20),
+    0 8px 24px rgba(0, 0, 0, 0.16);
+  --shadow-menu:
+    0 0 0 0.5px rgba(0, 0, 0, 0.25),
+    0 10px 30px rgba(0, 0, 0, 0.22);
+  --shadow-sheet:
+    0 0 0 1px rgba(0, 0, 0, 0.22),
+    0 12px 36px rgba(0, 0, 0, 0.28);
+  --well:
+    inset 0 1px 2px rgba(0, 0, 0, 0.22),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.18);
+  --bevel: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+
+  /* Translucent Ambient Surfaces Only (§4.3) */
+  --vibrancy-light: rgba(242, 242, 244, 0.80);
+  --vibrancy-menu: rgba(240, 240, 242, 0.92);
+
+  /* Brushed Metal Recipe (§6.6) */
+  --metal-bg:
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.015 0.9' numOctaves='2' seed='4'/><feColorMatrix values='0 0 0 0 0.45  0 0 0 0 0.46  0 0 0 0 0.48  0 0 0 0.17 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"),
+    linear-gradient(180deg, #E4E5E7 0%, #CFD1D4 55%, #BFC2C6 100%);
+}
